@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         #map {
-            width: 1377px;
-            height: 851px;
+            width: 1088px;
+            height: 931px;
         }
         </style>
         <title>Zone a risque grippe aviaire, Loir-et-Cher, dec 2020</title>
@@ -51,7 +51,7 @@
             continuousWorld: false,
             worldCopyJump: false, 
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[47.14322996684798,0.4925607233849499],[48.168308400726985,2.911214204653444]]);
+        }).fitBounds([[47.1448024973938,0.8199660349521469],[48.17242025275073,2.5894455430363066]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -199,7 +199,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,255,255,1.0)',
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_Dpartement_1');
@@ -207,7 +207,7 @@
         map.getPane('pane_Dpartement_1').style['mix-blend-mode'] = 'normal';
         var layer_Dpartement_1 = new L.geoJson(json_Dpartement_1, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_Dpartement_1',
             layerName: 'layer_Dpartement_1',
             pane: 'pane_Dpartement_1',
@@ -280,7 +280,7 @@
                 lineJoin: 'bevel',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_LGV_2');
@@ -288,7 +288,7 @@
         map.getPane('pane_LGV_2').style['mix-blend-mode'] = 'normal';
         var layer_LGV_2 = new L.geoJson(json_LGV_2, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_LGV_2',
             layerName: 'layer_LGV_2',
             pane: 'pane_LGV_2',
@@ -433,7 +433,7 @@
                 lineJoin: 'bevel',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_Autoroute_3');
@@ -441,7 +441,7 @@
         map.getPane('pane_Autoroute_3').style['mix-blend-mode'] = 'normal';
         var layer_Autoroute_3 = new L.geoJson(json_Autoroute_3, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_Autoroute_3',
             layerName: 'layer_Autoroute_3',
             pane: 'pane_Autoroute_3',
@@ -511,7 +511,7 @@
                 lineJoin: 'bevel',
                 weight: 3.0,
                 fillOpacity: 0,
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_Coursdeau_4');
@@ -519,7 +519,7 @@
         map.getPane('pane_Coursdeau_4').style['mix-blend-mode'] = 'normal';
         var layer_Coursdeau_4 = new L.geoJson(json_Coursdeau_4, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_Coursdeau_4',
             layerName: 'layer_Coursdeau_4',
             pane: 'pane_Coursdeau_4',
@@ -580,7 +580,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(255,255,255,1.0)',
-                interactive: false,
+                interactive: true,
             }
         }
         function style_Prfctureetsousprfecture_5_1() {
@@ -596,7 +596,7 @@
                 fill: true,
                 fillOpacity: 1,
                 fillColor: 'rgba(0,0,0,1.0)',
-                interactive: false,
+                interactive: true,
             }
         }
         map.createPane('pane_Prfctureetsousprfecture_5');
@@ -604,7 +604,7 @@
         map.getPane('pane_Prfctureetsousprfecture_5').style['mix-blend-mode'] = 'normal';
         var layer_Prfctureetsousprfecture_5 = new L.geoJson.multiStyle(json_Prfctureetsousprfecture_5, {
             attribution: '',
-            interactive: false,
+            interactive: true,
             dataVar: 'json_Prfctureetsousprfecture_5',
             layerName: 'layer_Prfctureetsousprfecture_5',
             pane: 'pane_Prfctureetsousprfecture_5',
